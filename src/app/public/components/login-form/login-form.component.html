@@ -3,7 +3,7 @@
   <div class="mt-5">
     <form #form="ngForm" (ngSubmit)="login()">
       <div class="form-group">
-        <label for="email">Email Teste</label>
+        <label for="email">Email</label>
         <input #email="ngModel" [(ngModel)]="user.email" id="email" name="email" type="email" class="form-control" email="true" required />
         <div *ngIf="email.invalid && email.touched" class="text-danger">
           <div *ngIf="email.errors">
